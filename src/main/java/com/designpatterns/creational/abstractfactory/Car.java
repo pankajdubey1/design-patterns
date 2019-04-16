@@ -1,4 +1,4 @@
-package com.designpatterns.creational.factory;
+package com.designpatterns.creational.abstractfactory;
 
 public class Car implements Vehicle {
 

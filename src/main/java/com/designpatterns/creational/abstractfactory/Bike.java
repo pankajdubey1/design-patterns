@@ -1,6 +1,6 @@
-package com.designpatterns.creational.factory;
+package com.designpatterns.creational.abstractfactory;
 
-public class Car implements Vehicle {
+public class Bike implements Vehicle {
 
 	private VehicleType type;
 
@@ -14,6 +14,6 @@ public class Car implements Vehicle {
 
 	@Override
 	public String getInfo() {
-		return "Car";
+		return "Bike";
 	}
 }

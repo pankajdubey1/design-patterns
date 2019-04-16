@@ -9,22 +9,22 @@ import org.junit.jupiter.api.Test;
 
 class VehicleFactoryTest {
 
-	private BikeFactory bikeFactory;
+	private VehicleFactory vehicleFactory;
 
 	@BeforeEach
 	public void setUp() {
-		bikeFactory = new BikeFactory();
+		vehicleFactory = new VehicleFactory();
 	}
 
 	@Test
 	public void testGetVehicle() {
 		String expected = "Bike";
-		String actual = bikeFactory.getVehicle(VehicleType.BIKE).getInfo();
+		String actual = vehicleFactory.getVehicle(VehicleType.BIKE).getInfo();
 		assertEquals(expected, actual);
 	}
 
 	@Test
 	public void testGetVehicleExceptionCase() {
-		assertThrows(InputMismatchException.class, () -> bikeFactory.getVehicle(VehicleType.DEFAULT));
+		assertThrows(InputMismatchException.class, () -> vehicleFactory.getVehicle(VehicleType.DEFAULT));
 	}
 }

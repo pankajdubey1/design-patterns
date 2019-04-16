@@ -1,18 +1,17 @@
-package com.designpatterns.creational.factory;
+package com.designpatterns.creational.abstractfactory;
 
 import java.util.InputMismatchException;
 
-public class BikeFactory {
-
-	private Vehicle vehicle;
+public class AbstractVehicleFactory {
 
 	public Vehicle getVehicle(VehicleType type) {
+		Vehicle vehicle;
 		switch (type) {
 		case BIKE:
-			vehicle = new Bike();
+			vehicle = new BikeFactory().getVehicle();
 			break;
 		case CAR:
-			vehicle = new Car();
+			vehicle = new CarFatory().getVehicle();
 			break;
 		default:
 			throw new InputMismatchException("Vehicle type is not specified");
