@@ -11,7 +11,7 @@ public class Client {
         shape.applyColor();
 
 
-        // Two Complete different hierarchy 
+        // Two Complete different hierarchy
         // 1. Shape -> Triangle
         // 2. Color -> RedColor
         // We are bridging the both
