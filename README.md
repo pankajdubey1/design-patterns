@@ -1,10 +1,8 @@
 # design-patterns
 
 It is an implementation of Gangs of Four Design Patterns. It is categorized into three categories. 
-  1. Creational
-  
+  1.Creational
   2.Structural
-  
   3.Behavioral
 
 Unit test case against all the patterns is also written(It is written using JUnit-5, So it requires JUnit-5 supported IDE in order to 
