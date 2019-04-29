@@ -1,6 +1,7 @@
 # design-patterns
 
 It is an implementation of Gangs of Four Design Patterns. It is categorized into three categories. 
+
   1.Creational
   2.Structural
   3.Behavioral
